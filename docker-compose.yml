@@ -1,0 +1,12 @@
+version: "3.5"
+services:
+    mysql:
+        image: library/mysql:8.0.11
+        container_name: java-jpa-mysql
+        ports:
+            - 3301:3306
+        volumes:
+            - ./var/mysql:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: "alura_jpa"
+            MYSQL_ROOT_PASSWORD: "root"
