@@ -6,10 +6,10 @@
 
     <persistence-unit name="contas">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>dev.amcosta.model.Moviment</class>
         <class>dev.amcosta.model.Category</class>
         <class>dev.amcosta.model.Client</class>
         <class>dev.amcosta.model.BankAccount</class>
-        <class>dev.amcosta.model.Moviment</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />

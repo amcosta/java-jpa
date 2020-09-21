@@ -6,7 +6,8 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity(name = "movimentacoes")
+@Entity
+@Table(name = "movimentacoes")
 public class Moviment {
 
     @Id
